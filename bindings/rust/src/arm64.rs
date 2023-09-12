@@ -305,7 +305,13 @@ pub enum RegisterARM64 {
     VBAR_EL2 = 288,
     VBAR_EL3 = 289,
     CP_REG = 290,
-    ENDING = 291,
+
+    FPCR = 291,
+    FPSR = 292,
+
+    ESR = 293,
+
+    ENDING = 294,
 }
 
 impl RegisterARM64 {

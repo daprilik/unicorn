@@ -263,7 +263,11 @@ uc_err reg_read(void *_env, int mode, unsigned int regid, void *value,
             CHECK_REG_TYPE(uint32_t);
             *(uint32_t *)value = vfp_get_fpsr(env);
             break;
-        }
+	case UC_ARM64_REG_ESR:
+             CHECK_REG_TYPE(uint32_t);
+	     *(uint32_t *)value = env->exception.syndrome;
+             break;
+	}
     }
 
     return ret;
