@@ -354,7 +354,8 @@ typedef enum uc_arm64_reg {
     UC_ARM64_REG_FPCR,
     UC_ARM64_REG_FPSR,
 
-    UC_ARM64_REG_ESR,
+    UC_ARM64_REG_HACK_ESR_EL1,
+    UC_ARM64_REG_HACK_FAR_EL1,
 
     UC_ARM64_REG_ENDING, // <-- mark the end of the list of registers
 

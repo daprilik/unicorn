@@ -309,9 +309,10 @@ pub enum RegisterARM64 {
     FPCR = 291,
     FPSR = 292,
 
-    ESR = 293,
+    HACK_ESR_EL1 = 293,
+    HACK_FAR_EL1 = 294,
 
-    ENDING = 294,
+    ENDING = 295,
 }
 
 impl RegisterARM64 {
